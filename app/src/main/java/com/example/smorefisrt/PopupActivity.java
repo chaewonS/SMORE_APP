@@ -26,7 +26,7 @@ public class PopupActivity extends Activity implements View.OnClickListener {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub);
+        setContentView(R.layout.activity_popup);
 
 
         btn_ok = (TextView) findViewById(R.id.btn_ok);

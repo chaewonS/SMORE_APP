@@ -11,7 +11,7 @@ public class MainActivity2Sub extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub2);
+        setContentView(R.layout.activity_mainsub2);
         btn_sur = (Button) findViewById(R.id.survey);
         btn_sur.setOnClickListener(this);
     }
