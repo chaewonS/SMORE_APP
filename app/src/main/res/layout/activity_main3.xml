@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity2Sub">
+    tools:context=".MainActivity3">
 
     <LinearLayout
         android:id="@+id/id_main"
@@ -72,14 +72,14 @@
                 android:background="@drawable/bar1" />
             <Button
                 android:id="@+id/survey"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="265dp"
+                android:layout_marginLeft="220dp"
                 android:layout_marginRight="70dp"
-                android:text="설문 조사"
-                android:fontFamily="@font/gmarketmedium"
+                android:text="설문 조사 완료"
+                android:fontFamily="@font/gmarketlight"
+                android:backgroundTint="@android:color/transparent"
                 android:textColor="@color/black"
-                android:backgroundTint="@color/white"
                 android:textSize="18sp"/>
 
             <LinearLayout
@@ -267,5 +267,6 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:src="@drawable/bar"/>
+
     </LinearLayout>
 </LinearLayout>

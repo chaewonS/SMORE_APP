@@ -95,7 +95,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     private void init(){
 
-        findViewById(R.id.btn_menu).setOnClickListener(this);
+        //findViewById(R.id.btn_menu).setOnClickListener(this);
 
         mainLayout = findViewById(R.id.id_main);
         viewLayout = findViewById(R.id.fl_silde);
@@ -138,10 +138,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
         switch (view.getId()){
 
-            case R.id.btn_menu :
+           // case R.id.btn_menu :
 
-                showMenu();
-                break;
+           //     showMenu();
+            //    break;
         }
     }
 

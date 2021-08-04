@@ -90,15 +90,15 @@ public class MainActivity2 extends Activity implements View.OnClickListener{
                 Intent intent = new Intent(MainActivity2.this, PopupActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_menu :
-                showMenu();
-                break;
+            //case R.id.btn_menu :
+            //    showMenu();
+            //    break;
         }
     }
 
     private void init(){
 
-        findViewById(R.id.btn_menu).setOnClickListener(this);
+       // findViewById(R.id.btn_menu).setOnClickListener(this);
 
         mainLayout = findViewById(R.id.id_main);
         viewLayout = findViewById(R.id.fl_silde);
