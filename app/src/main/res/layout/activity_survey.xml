@@ -1,51 +1,468 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="300dp"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/background"
-        android:gravity="center"
-        android:text="mamaforest 설문조사"
-        android:textColor="@color/black"
-        android:fontFamily="@font/gmarketbold"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:layout_marginTop="60dp"
-        android:gravity="center"
-        android:fontFamily="@font/gmarketlight"
-        android:text="설문조사를 진행합니다."
-        android:textSize="20sp" />
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/btn_ok"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:background="@drawable/background"
-            android:clickable="true"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
             android:gravity="center"
-            android:text="확인"
-            android:fontFamily="@font/gmarketmedium"
-            android:textColor="@color/black"
-            android:textSize="16dp"
-            android:textStyle="bold" />
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"/>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imgsmore"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/bar1" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/gmarketbold"
+                            android:text="mamaforest 설문조사"
+                            android:textSize="20sp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2px"
+                            android:background="@color/black"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/gmarketlight"
+                    android:text="해당 설문조사는 스타트업에서 제공합니다.\n 스타트업의 성장을 함께하는 동행자가 되어주세요.">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:src="@drawable/background"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/gmarketmedium"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:text="1. 우리 기업을 구독한 이유를 골라주세요."/>
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="46dp"
+                        android:text="제품을 사용해본 경험이 있어서" />
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="68dp"
+                        android:text="가치관에 맞는 스타트업이라서"/>
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="91dp"
+                        android:text="디자인이 마음에 들어서" />
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="114dp"
+                        android:text="SNS 홍보를 통해서"/>
+                    <EditText
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="143dp"
+                        android:textSize="13sp"
+                        android:hint="다른 이유가 있다면 작성해주세요."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginBottom="80dp"
+                        android:fontFamily="@font/gmarketmedium"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="2. 우리 기업의 첫 이미지를 작성해주세요.">
+                    </TextView>
+                    <EditText
+                        android:layout_marginLeft="90dp"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gmarketlight"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:layout_marginTop="205dp">
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. 우리 기업의 강점을 골라주세요."
+                        android:fontFamily="@font/gmarketmedium"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:layout_marginTop="260dp"/>
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="280dp"
+                        android:text="기업의 가치관(친환경)" />
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="305dp"
+                        android:text="제품 디자인"/>
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="330dp"
+                        android:text="제품 품질" />
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="355dp"
+                        android:text="홍보 방식"/>
+                    <EditText
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="384dp"
+                        android:textSize="13sp"
+                        android:hint="다른 이유가 있다면 작성해주세요."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. 우리 기업의 보완점을 골라주세요."
+                        android:fontFamily="@font/gmarketmedium"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:layout_marginTop="438dp"/>
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="456dp"
+                        android:text="해당 기업만의 뚜렷한 가치관이 없음" />
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="480dp"
+                        android:text="가격이 비싼 편임"/>
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="505dp"
+                        android:text="소비자와의 소통이 부족함" />
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/gmarketlight"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="530dp"
+                        android:text="홍보 수단이 부족함"/>
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="561dp"
+                        android:textSize="13sp"
+                        android:hint="다른 이유가 있다면 작성해주세요."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="615dp"
+                        android:layout_marginBottom="40dp"
+                        android:fontFamily="@font/gmarketmedium"
+                        android:gravity="center"
+                        android:text="2. 다음은 판매량이 높은 3개의 제품입니다.\n우리 기업의 메인 제품은 무엇이라고 생각하시나요?"
+                        android:textSize="16sp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="660dp">
+                        <ImageButton
+                            android:id="@+id/sel1"
+                            android:layout_width="131dp"
+                            android:backgroundTint="@color/white"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/list1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+                        <ImageButton
+                            android:id="@+id/sel2"
+                            android:layout_width="131dp"
+                            android:backgroundTint="@color/white"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/list4"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+                        <ImageButton
+                            android:id="@+id/sel3"
+                            android:backgroundTint="@color/white"
+                            android:layout_width="131dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/list14"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="795dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gmarketmedium"
+                            android:gravity="center"
+                            android:text="3. 우리 기업을 설명할 수 있는 해시태그는 무엇인가요?"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="825dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/tag1"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/gmarketmedium"
+                            android:background="@drawable/background"
+                            android:text="#친환경적인"/>
+                        <Button
+                            android:id="@+id/tag2"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:fontFamily="@font/gmarketmedium"
+                            android:background="@drawable/background"
+                            android:layout_marginLeft="10dp"
+                            android:text="#혁신적인"/>
+                        <Button
+                            android:id="@+id/tag3"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:fontFamily="@font/gmarketmedium"
+                            android:background="@drawable/background"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="11sp"
+                            android:text="#깔끔한_디자인"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="875dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/tag4"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/gmarketmedium"
+                            android:background="@drawable/background"
+                            android:text="#감각적인"/>
+                        <Button
+                            android:id="@+id/tag5"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:fontFamily="@font/gmarketmedium"
+                            android:background="@drawable/background"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="11sp"
+                            android:text="#저렴한_가격"/>
+                        <Button
+                            android:id="@+id/tag6"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:fontFamily="@font/gmarketmedium"
+                            android:background="@drawable/background"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="11sp"
+                            android:text="#비건_제품"/>
+                    </LinearLayout>
+                    <EditText
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="920dp"
+                        android:textSize="13sp"
+                        android:hint="다른 해시태그가 있으면 작성해주세요."/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="980dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gmarketmedium"
+                            android:gravity="center"
+                            android:text="5.우리 기업에게 전달하고 말이 있다면\n자유롭게 작성해주세요."
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <EditText
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1020dp"
+                        android:textSize="13sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1070dp"
+                        android:src="@drawable/background"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1110dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gmarketlight"
+                            android:gravity="center"
+                            android:text="우리 기업이 제공하는 설문에 참여해주셔서 감사합니다.
+                                           해당 설문의 답변을 바탕으로\n우리 기업은 지속적으로 성장하겠습니다."
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_ok"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/gmarketbold"
+                        android:textColor="@color/black"
+                        android:background="@drawable/background"
+                        android:layout_marginTop="1170dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="제출"/>
+                </androidx.cardview.widget.CardView>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/bar"/>
+
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
