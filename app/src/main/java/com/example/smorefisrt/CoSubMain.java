@@ -1,7 +1,5 @@
 package com.example.smorefisrt;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -15,24 +13,12 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
-import android.app.Activity;
-import android.content.Context;
-import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.view.KeyEvent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Toast;
 
+public class CoSubMain extends Activity implements View.OnClickListener{
 
-public class MainActivity extends Activity implements View.OnClickListener{
+    private String TAG = "MainActivity2";
 
-    private String TAG = "MainActivity";
-    private Context mContext = MainActivity.this;
+    private Context mContext = CoSubMain.this;
 
     private ViewGroup mainLayout;   //사이드 나왔을때 클릭방지할 영역
     private ViewGroup viewLayout;   //전체 감싸는 영역
@@ -40,6 +26,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     private Boolean isMenuShow = false;
     private Boolean isExitFlag = false;
+
+    private Button btn_sub;
+    private SubPopup mPopupActivity;
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -77,25 +66,39 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.submain_co);
+        btn_sub = (Button)findViewById(R.id.button3);
+        btn_sub.setOnClickListener(this);
         init();
 
-        Button button1 = findViewById(R.id.button1);
+        Button button1 = findViewById(R.id.button2);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+                Intent intent = new Intent(getApplicationContext(), CoMainActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
-
         addSideView();  //사이드바 add
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            //팝업창 띄우기
+            case R.id.button3:
+                Intent intent = new Intent(CoSubMain.this, SubPopup.class);
+                startActivity(intent);
+                break;
+            //case R.id.btn_menu :
+            //    showMenu();
+            //    break;
+        }
     }
 
     private void init(){
 
-        //findViewById(R.id.btn_menu).setOnClickListener(this);
+       // findViewById(R.id.btn_menu).setOnClickListener(this);
 
         mainLayout = findViewById(R.id.id_main);
         viewLayout = findViewById(R.id.fl_silde);
@@ -132,18 +135,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
         });
     }
 
-
-    @Override
-    public void onClick(View view) {
-
-        switch (view.getId()){
-
-           // case R.id.btn_menu :
-
-           //     showMenu();
-            //    break;
-        }
-    }
 
     public void closeMenu(){
 

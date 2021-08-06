@@ -148,14 +148,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="114dp"
                         android:text="SNS 홍보를 통해서"/>
+
                     <EditText
-                        android:layout_marginRight="20dp"
-                        android:layout_marginLeft="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="143dp"
-                        android:textSize="13sp"
-                        android:hint="다른 이유가 있다면 작성해주세요."/>
+                        android:layout_marginRight="20dp"
+                        android:hint="다른 이유가 있다면 작성해주세요."
+                        android:textSize="13sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -224,7 +225,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="384dp"
                         android:textSize="13sp"
-                        android:hint="다른 이유가 있다면 작성해주세요."/>
+                        android:hint="다른 강점이 있다면 작성해주세요."/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -273,7 +274,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="561dp"
                         android:textSize="13sp"
-                        android:hint="다른 이유가 있다면 작성해주세요."/>
+                        android:hint="다른 보완점이 있다면 작성해주세요."/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -282,7 +283,7 @@
                         android:layout_marginBottom="40dp"
                         android:fontFamily="@font/gmarketmedium"
                         android:gravity="center"
-                        android:text="2. 다음은 판매량이 높은 3개의 제품입니다.\n우리 기업의 메인 제품은 무엇이라고 생각하시나요?"
+                        android:text="5. 다음은 판매량이 높은 3개의 제품입니다.\n우리 기업의 메인 제품은 무엇이라고 생각하시나요?"
                         android:textSize="16sp"></TextView>
 
                     <LinearLayout
@@ -326,7 +327,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gmarketmedium"
                             android:gravity="center"
-                            android:text="3. 우리 기업을 설명할 수 있는 해시태그는 무엇인가요?"
+                            android:text="6. 우리 기업을 설명할 수 있는 해시태그는 무엇인가요?"
                             android:textSize="16sp" />
                     </LinearLayout>
                     <LinearLayout
@@ -399,7 +400,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="920dp"
                         android:textSize="13sp"
-                        android:hint="다른 해시태그가 있으면 작성해주세요."/>
+                        android:hint="다른 해시태그가 있다면 작성해주세요."/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -411,7 +412,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gmarketmedium"
                             android:gravity="center"
-                            android:text="5.우리 기업에게 전달하고 말이 있다면\n자유롭게 작성해주세요."
+                            android:text="7.우리 기업에게 전달하고 싶은 말이 있다면\n자유롭게 작성해주세요."
                             android:textSize="16sp" />
                     </LinearLayout>
                     <EditText
@@ -421,11 +422,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1020dp"
                         android:textSize="13sp" />
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1070dp"
-                        android:src="@drawable/background"/>
+                        android:src="@drawable/background" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

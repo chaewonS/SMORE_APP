@@ -124,7 +124,7 @@
                 android:text="구독"
                 android:fontFamily="@font/gmarketmedium"
                 android:textColor="@color/black"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#DBCFBA"
                 android:onClick="onClick"
                 android:textSize="15sp" />
         </androidx.cardview.widget.CardView>

@@ -3,7 +3,6 @@ package com.example.smorefisrt;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -86,7 +85,7 @@ public class SurveyActivity extends Activity implements View.OnClickListener {
                     tag1.setBackgroundDrawable(ContextCompat.getDrawable(SurveyActivity.this, R.drawable.background));
                     a = false;
                 } else {
-                    tag1.setBackgroundColor(Color.GREEN);
+                    tag1.setBackgroundColor(Color.parseColor("#DBCFBA"));
                     a = true;
                 }
             }
@@ -98,7 +97,7 @@ public class SurveyActivity extends Activity implements View.OnClickListener {
                     tag2.setBackgroundDrawable(ContextCompat.getDrawable(SurveyActivity.this, R.drawable.background));
                     b = false;
                 } else {
-                    tag2.setBackgroundColor(Color.GREEN);
+                    tag2.setBackgroundColor(Color.parseColor("#DBCFBA"));
                     b = true;
                 }
             }
@@ -110,7 +109,7 @@ public class SurveyActivity extends Activity implements View.OnClickListener {
                     tag3.setBackgroundDrawable(ContextCompat.getDrawable(SurveyActivity.this, R.drawable.background));
                     c = false;
                 } else {
-                    tag3.setBackgroundColor(Color.GREEN);
+                    tag3.setBackgroundColor(Color.parseColor("#DBCFBA"));
                     c = true;
                 }
             }
@@ -122,7 +121,7 @@ public class SurveyActivity extends Activity implements View.OnClickListener {
                     tag4.setBackgroundDrawable(ContextCompat.getDrawable(SurveyActivity.this, R.drawable.background));
                     d = false;
                 } else {
-                    tag4.setBackgroundColor(Color.GREEN);
+                    tag4.setBackgroundColor(Color.parseColor("#DBCFBA"));
                     d = true;
                 }
             }
@@ -134,7 +133,7 @@ public class SurveyActivity extends Activity implements View.OnClickListener {
                     tag5.setBackgroundDrawable(ContextCompat.getDrawable(SurveyActivity.this, R.drawable.background));
                     e = false;
                 } else {
-                    tag5.setBackgroundColor(Color.GREEN);
+                    tag5.setBackgroundColor(Color.parseColor("#DBCFBA"));
                     e = true;
                 }
             }
@@ -146,7 +145,7 @@ public class SurveyActivity extends Activity implements View.OnClickListener {
                     tag6.setBackgroundDrawable(ContextCompat.getDrawable(SurveyActivity.this, R.drawable.background));
                     f = false;
                 } else {
-                    tag6.setBackgroundColor(Color.GREEN);
+                    tag6.setBackgroundColor(Color.parseColor("#DBCFBA"));
                     f = true;
                 }
             }
@@ -157,7 +156,7 @@ public class SurveyActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_ok:
-                Intent intent = new Intent(SurveyActivity.this, SubmitPopupActivity.class);
+                Intent intent = new Intent(SurveyActivity.this, SubmitPopup.class);
                 startActivity(intent);
                 break;
         }

@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SMOREFISRT">
-        <activity android:name=".MainActivity3"></activity>
-        <activity android:name=".MainActivity2Sub" />
+        <activity android:name=".CoSurveyMain"></activity>
+        <activity android:name=".CoFinish" />
         <activity android:name=".SurveyActivity" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".CoSubMain" />
+        <activity android:name=".CoMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +21,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PopupActivity"
+            android:name=".SubPopup"
             android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" />
         <activity
-            android:name=".SubmitPopupActivity"
+            android:name=".SubmitPopup"
             android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" />
     </application>
 
