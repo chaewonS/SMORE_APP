@@ -1,6 +1,7 @@
 # SMORE_APP
+**🧸**
 
-<8/4>
+🧡<8/4>
 
 **1. Sidebar** 
 
@@ -14,7 +15,7 @@
 **3. 화면 전환**
 -intent 전달
 
-<8/5>
+💛<8/5>
 
 **4.Text 중앙 정렬(gravity center)**
 
@@ -30,5 +31,27 @@
 -1) ImageButton 이미지 변경(setImageResource)
 
 -2) Button Background 변경(setBackgroundColor/setBackgroundDrawable)
+
+**7. 가로선**
+
+-android:layout_height="1dp" / android:layout_width="match_parent"
+
+💚<8/6>
+
+**8. setBackgroundColor**
+
+-setBackgroundColor(Color.praseColor("#~"))
+
+**9. 버튼 위치 수정(margin 조절)**
+
+-layout_marginStart="1dp" / layout_marginLeft="0dp"
+
+💙<8/9>
+
+**10. icon 추가**
+
+-mipmap -> image asset
+
+-Manifest 파일 수정 (icon/round_icon)
 
 
