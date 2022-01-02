@@ -1,7 +1,7 @@
 # SMORE_APP
 **🧸**
 
-🧡<8/4>
+<8/4>
 
 **1. Sidebar** 
 
@@ -18,7 +18,7 @@
 -intent 전달
 
 
-💛<8/5>
+<8/5>
 
 **4.Text 중앙 정렬(gravity center)**
 
@@ -43,7 +43,7 @@
 -android:layout_height="1dp" / android:layout_width="match_parent"
 
 
-💚<8/6>
+<8/6>
 
 **8. setBackgroundColor**
 
@@ -55,7 +55,7 @@
 -layout_marginStart="1dp" / layout_marginLeft="0dp"
 
 
-💙<8/9>
+<8/9>
 
 **10. icon 추가**
 
